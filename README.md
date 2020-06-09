@@ -1,1 +1,1 @@
-# Otsu-Algorithm
+# Otsu- OBJECTIVE FUNCTION
