@@ -38,12 +38,11 @@ for i in range(0, len(h)):
             
 print(cnt)
 
-for i in range(len(h)):
-    print(h[i])
+# CALCULATING THE PROBABILITY OF INDIVIDUAL PIXEL
     
 for i in range (len(h)):
     h[i]=h[i]/cnt
-    
+ # OTSU CALCULATION   
 cumulative_sum=[]
 cumulative_mean=[]
 global_mean=0
@@ -60,7 +59,8 @@ for i in range(len(thresholds)-1):
     global_mean=global_mean+cumulative
 for i in range(len(cumulative_sum)):
    Sigma = Sigma + (cumulative_sum[i] *((cumulative_mean[i] - global_mean) ** 2))
-    
+ 
+ #RESULT
 print(Sigma)
 
 
