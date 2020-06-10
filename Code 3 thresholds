@@ -6,7 +6,7 @@ from matplotlib import pyplot as plt
 from PIL import Image
 
 # READ AN IMAGE AND CONVERT IT INTO GRAYSCALE
-image = Image.open('E:\\lena.tiff').convert("L")#Convert an image into GrayScale
+image = Image.open('E:\\lena.tiff').convert("L")
 print(image)
 
 # DEFINING THRESHOLDS
@@ -15,7 +15,7 @@ thresholds.append(256)
 thresholds.insert(0,0)
 
 #CONVERT GIVEN INPUT INTO ARRAY
-img = np.asarray(image)#Convert given input into array
+img = np.asarray(image)
 print(img)
 
 # MAKING HISTOGRAM
@@ -70,3 +70,5 @@ for i in range(len(cumulative_sum)):
 print(Sigma)
 
 
+# OUTPUT
+2125.782071487203
