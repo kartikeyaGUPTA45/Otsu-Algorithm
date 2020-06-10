@@ -1,15 +1,19 @@
+# IMPORTING LIBRARIES
 import math
 import numpy as np
 from matplotlib import pyplot as plt
 from PIL import Image
 
+# READ AN IMAGE AND CONVERT INTO GRAYSCALE
 image = Image.open('E:\\lena.tiff').convert("L")#Convert an image into GrayScale
 print(image)
 
+# DEFINNING THRESHOLDS
 thresholds=[64,97,137,179]
 thresholds.append(256)
 thresholds.insert(0,0)
 
+# CONVERT AN INPUT INTO ARRAY
 img = np.asarray(image)#Convert given input into array
 print(img)
 
