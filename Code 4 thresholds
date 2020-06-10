@@ -39,10 +39,6 @@ for i in range(0, len(h)):
             
 print(cnt)
 
-for i in range(len(h)):
-    print(h[i])
-
-
 # FINDING PROBABILITY OF AN INDIVIDUAL PIXEL
 for i in range (len(h)):
     h[i]=h[i]/cnt
@@ -68,4 +64,5 @@ for i in range(len(cumulative_sum)):
 # RESULT
 print(Sigma)
 
-
+# OUTPUT
+2173.0611552685955
