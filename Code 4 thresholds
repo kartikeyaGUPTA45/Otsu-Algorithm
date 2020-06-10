@@ -17,6 +17,7 @@ thresholds.insert(0,0)
 img = np.asarray(image)#Convert given input into array
 print(img)
 
+# MAKING HISTOGRAM
 def Hist(img):
     row, col = img.shape 
     y = np.zeros(256,dtype=float)
@@ -30,7 +31,7 @@ def Hist(img):
 
 h=Hist(img)
 
-
+# COUNT THE NUMBER OF PIXELS IN AN IMAGE
 cnt = 0
 for i in range(0, len(h)):
     if h[i]>0:
@@ -40,10 +41,13 @@ print(cnt)
 
 for i in range(len(h)):
     print(h[i])
-    
+
+
+# FINDING PROBABILITY OF AN INDIVIDUAL PIXEL
 for i in range (len(h)):
     h[i]=h[i]/cnt
-    
+ 
+ # OTSU CALCULATION
 cumulative_sum=[]
 cumulative_mean=[]
 global_mean=0
@@ -60,7 +64,8 @@ for i in range(len(thresholds)-1):
     global_mean=global_mean+cumulative
 for i in range(len(cumulative_sum)):
    Sigma = Sigma + (cumulative_sum[i] *((cumulative_mean[i] - global_mean) ** 2))
-    
+   
+# RESULT
 print(Sigma)
 
 
