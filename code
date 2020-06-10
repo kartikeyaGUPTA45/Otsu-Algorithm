@@ -63,4 +63,6 @@ for i in range(len(cumulative_sum)):
  #RESULT
 print(Sigma)
 
+# OUTPUT
 
+2217.793215259837
