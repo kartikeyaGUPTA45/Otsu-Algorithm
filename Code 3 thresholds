@@ -40,9 +40,7 @@ for i in range(0, len(h)):
             
 print(cnt)
 
-for i in range(len(h)):
-    print(h[i])
-  
+ 
 # FINDING THE PROBABILITY OF AN INDIVIDUAL PIXEL
 for i in range (len(h)):
     h[i]=h[i]/cnt
